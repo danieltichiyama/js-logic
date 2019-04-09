@@ -241,7 +241,15 @@ console.log(evenStevens(2));
  * Console.log your result.
 */ 
 
+function daClub (cover, age){
+  if(cover >=21 && age >=21){
+    return "Welcome to Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
+  }
+}
 
+console.log(daClub(18,21));
 /*
  * #12
  * Function - graduation
@@ -255,7 +263,15 @@ console.log(evenStevens(2));
  * Console.log your result.
 */ 
 
+function graduation (credits, grades){
+  if (credits>=120 || grades >=2.0){
+    return "Congratulations on a job well done."
+  }else{
+    "See you in summer school."
+  }
+}
 
+console.log(graduation(125,1.5));
 
 /*
  * #13
@@ -269,6 +285,17 @@ console.log(evenStevens(2));
  * Console.log your result.
 */ 
 
+function moneyTrain (speed){
+  if (speed<50){
+    return "You are riding Honolulu's Rail."
+  }else if(speed<100){
+    return "You are riding an Amtrak.";
+  }else if (speed>=100){
+    return "You are ballin' in the Shinkansen.";
+  }
+}
+
+console.log(moneyTrain(99));
 
 /*
  * #14
@@ -284,11 +311,56 @@ console.log(evenStevens(2));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 25;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut (){
+  if (budget>doughnutPrice){
+    budget-=doughnutPrice;
+    doughnutBought+=1;
+    return 'You have $ '+ budget + 'remaining and ' + doughnutBought + 'doughnuts to eat.'
+  }else{
+    return "Sorry, you don't have enough money for a doughnut."
+  }
+}
+
+console.log(buyDoughnut());
+console.log(buyDoughnut());
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+function dailySpecials(day){
+  
+  switch (day){
+    case 'Monday':
+      special = 'pork and beans';
+      break;
+    case 'Tuesday':
+      special = 'saimin';
+      break;
+    case 'Wednesday':
+      special = 'beef broccoli';
+      break;
+    case 'Thursday':
+      special = 'spaghetti';
+      break;
+    case 'Friday':
+      special = 'drinks on da house';
+      break;
+    case 'Saturday':
+      special = 'chocolate';
+      break;
+    case 'Sunday':
+      special = 'we do not have any specials today.';
+      break;
+  }
+  return special;
+}
 
+console.log(dailySpecials('Tuesday'));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
