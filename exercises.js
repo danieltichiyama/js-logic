@@ -153,7 +153,15 @@ console.log(isEqual('hello','Hello'));
  * Console.log your result.
 */
 
+function notEqual (first, second){
+  if(first===second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror.";
+  }
+}
 
+console.log(notEqual('Hello','hello'));
 /*
  * #8
  * Function - spareChange
