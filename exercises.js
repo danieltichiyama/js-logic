@@ -423,7 +423,16 @@ for (i=0;i<myFavFoods.length;i++){
  * Console.log your result.
 */
 
+var numArray =[5,4,3,2,1];
+var total = 0;
 
+function sumItUp (arr){
+  for (i=0;i<arr.length;i++){
+    total+=arr[i];
+  }
+  return total;
+}
+console.log(sumItUp(numArray));
 
 /*
  * #18
@@ -437,7 +446,25 @@ for (i=0;i<myFavFoods.length;i++){
  * Console.log both the east and west arrays.
 */ 
 
+function allStars (ballers){
+  for(i=0;i<ballers.length;i++){
+    if(i%2==0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+  }
+}
+
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var east = [];
+var west = [];
+
+allStars (players);
+
+console.log(east,west);
+
 /*
  * #19
  * Function - subways
@@ -452,6 +479,15 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+  function subways (special){
+    for (i=0;i<special.length;i++){
+      if(i%2!==0){
+        special.splice (i,1,'Classic Tuna');
+      }
+    }return special;
+  }
+
+  console.log(subways (subOftheDay));
 
 /*
 Final Boss
