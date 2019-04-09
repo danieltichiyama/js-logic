@@ -90,7 +90,13 @@ console.log(isGreaterThan(3,4));
  * Console.log your result.
 */
 
+function mustBeTrue (boo){
+  if (boo == true){
+    return true;
+  }
+}
 
+console.log(mustBeTrue(3>2));
 
 /*
  * #5
