@@ -319,14 +319,19 @@ function buyDoughnut (){
   if (budget>doughnutPrice){
     budget-=doughnutPrice;
     doughnutBought+=1;
-    return 'You have $ '+ budget + 'remaining and ' + doughnutBought + 'doughnuts to eat.'
+    //return 'You have $ '+ budget + 'remaining and ' + doughnutBought + 'doughnuts to eat.'
+    return
   }else{
     return "Sorry, you don't have enough money for a doughnut."
   }
 }
+buyDoughnut()
 
-console.log(buyDoughnut());
-console.log(buyDoughnut());
+
+console.log(budget)
+console.log(doughnutBought);
+// console.log(buyDoughnut());
+// console.log(buyDoughnut());
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
